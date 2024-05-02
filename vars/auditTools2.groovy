@@ -1,7 +1,8 @@
 def call(Map config){
     node{
-          sh '''
           echo "${config.message}"
+          sh '''
+          echo " Your Build number is: ${env.BUILD_NUMBER}"
           git --version
           sudo apt-get install maven -y
           mvn --version
