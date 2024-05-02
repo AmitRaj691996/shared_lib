@@ -5,5 +5,6 @@ def call(){
     git --version
     mvn --version
     java --version
+    '''
   }
 }
