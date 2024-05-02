@@ -1,7 +1,8 @@
 def call(Map config){
     node{
-          sh '''
+          
           echo "${config.message}"
+          sh '''
           git --version
           sudo apt-get install maven -y
           mvn --version
